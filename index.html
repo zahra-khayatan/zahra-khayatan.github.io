@@ -2,22 +2,67 @@
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>زهرا خیاطان | Backend Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زهرا خیاطان | توسعه‌دهنده پایتون و جنگو</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <style>
-        body { font-family: Tahoma, sans-serif; background: #0f172a; color: #f8fafc; text-align: center; padding: 50px; }
-        h1 { color: #38bdf8; }
-        .card { background: #1e293b; border-radius: 8px; padding: 20px; max-width: 600px; margin: 20px auto; text-align: right; }
-        .badge { background: #0284c7; padding: 4px 8px; border-radius: 4px; font-size: 12px; }
+        body { font-family: Vazirmatn, sans-serif; }
     </style>
 </head>
-<body>
-    <h1>زهرا خیاطیان</h1>
-    <p>دانشجوی مهندسی کامپیوتر & توسعه‌دهنده بک‌اند (Python / Django)</p>
-    
-    <div class="card">
-        <h3>پروژه: Daily-Logger App</h3>
-        <p>سرویس مدیریت لاگ‌های روزانه توسعه داده شده با جنگو و داکرایز شده با Docker Compose.</p>
-        <span class="badge">Django</span> <span class="badge">Docker</span> <span class="badge">MySQL</span>
+<body class="bg-slate-900 text-slate-100 min-h-screen py-10 px-4">
+    <div class="max-w-3xl mx-auto space-y-8">
+        
+        <header class="text-center space-y-4 border-b border-slate-700 pb-8">
+            <h1 class="text-4xl font-extrabold text-sky-400">زهرا خیاطان</h1>
+            <p class="text-lg text-slate-300">دانشجوی مهندسی کامپیوتر & توسعه‌دهنده بک‌اند (Python / Django)</p>
+            <div class="flex justify-center gap-4 text-sm text-sky-300">
+                <a href="https://github.com/zahra-khayatan" target="_blank" class="hover:underline bg-slate-800 px-4 py-2 rounded-lg border border-slate-700">📌 پروفایل گیت‌هاب من</a>
+            </div>
+        </header>
+
+        <section class="space-y-3">
+            <h2 class="text-xl font-bold text-sky-400 border-r-4 border-sky-400 pr-3">مهارت‌های فنی</h2>
+            <div class="flex flex-wrap gap-2 text-sm">
+                <span class="bg-slate-800 text-sky-300 px-3 py-1 rounded-md border border-slate-700">Python</span>
+                <span class="bg-slate-800 text-sky-300 px-3 py-1 rounded-md border border-slate-700">Django</span>
+                <span class="bg-slate-800 text-sky-300 px-3 py-1 rounded-md border border-slate-700">Docker & Docker Compose</span>
+                <span class="bg-slate-800 text-sky-300 px-3 py-1 rounded-md border border-slate-700">MySQL & SQLite</span>
+                <span class="bg-slate-800 text-sky-300 px-3 py-1 rounded-md border border-slate-700">Git / GitHub</span>
+                <span class="bg-slate-800 text-sky-300 px-3 py-1 rounded-md border border-slate-700">RESTful API Design</span>
+            </div>
+        </section>
+
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-sky-400 border-r-4 border-sky-400 pr-3">پروژه‌های برجسته</h2>
+            
+            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 space-y-4 shadow-lg">
+                <div class="flex justify-between items-start flex-wrap gap-2">
+                    <h3 class="text-lg font-bold text-white">برنامه مدیریت لاگ روزانه (Daily-Logger App)</h3>
+                    <a href="https://github.com/zahra-khayatan/Daily-logger" target="_blank" class="inline-flex items-center gap-2 bg-sky-600 hover:bg-sky-500 text-white text-xs font-semibold px-3 py-1.5 rounded-md transition-colors">
+                        مشاهده پروژه در گیت‌هاب ↗
+                    </a>
+                </div>
+                
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    سرویس بک‌اند توسعه‌داده‌شده با **پایتون و جنگو** جهت ثبت و مدیریت برنامه‌ها و لاگ‌های روزانه. پروژه کاملاً داکرایز شده و آماده توسعه محلی با **Docker Compose** است.
+                </p>
+
+                <ul class="text-xs text-slate-400 space-y-1 list-disc list-inside">
+                    <li>راه‌اندازی معماری کانتینری با استفاده از Dockerfile و Docker Compose</li>
+                    <li>طراحی دیتابیس و مدیریت مایگریشن‌ها</li>
+                    <li>ارتباط ایزوله بین کانتینر اپلیکیشن جنگو و دیتابیس</li>
+                </ul>
+
+                <div class="flex flex-wrap gap-2 pt-2 text-xs">
+                    <span class="bg-slate-900 text-slate-300 px-2 py-1 rounded">Django</span>
+                    <span class="bg-slate-900 text-slate-300 px-2 py-1 rounded">Docker</span>
+                    <span class="bg-slate-900 text-slate-300 px-2 py-1 rounded">Docker Compose</span>
+                    <span class="bg-slate-900 text-slate-300 px-2 py-1 rounded">SQLite / MySQL</span>
+                </div>
+            </div>
+        </section>
+
     </div>
 </body>
 </html>
